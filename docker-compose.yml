@@ -3,7 +3,7 @@ version: "3.8"
 services:
   backend:
     build: .
-    container_name: story-api
+    container_name: mog-backend
     ports:
       - "8000:8000"
     restart: unless-stopped
@@ -20,9 +20,6 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-    depends_on:
-      backend:
-        condition: service_healthy
     networks:
       - app-network
 
