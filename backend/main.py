@@ -4,6 +4,8 @@ from pydantic import BaseModel, Field
 
 app = FastAPI(title="Story Generator API")
 
+print(1)
+
 # Разрешаем запросы с фронтенда (Vite по умолчанию на 5173)
 app.add_middleware(
     CORSMiddleware,
@@ -25,4 +27,4 @@ class StoryResponse(BaseModel):
 def generate_story(data: PromptRequest):
     # Здесь позже подключишь настоящую генерацию (LLM и т.д.)
     generated = f"Сгенерированная история по промпту: «{data.prompt}»"
-    return StoryResponse(story=generated)
+    return StoryResponse
