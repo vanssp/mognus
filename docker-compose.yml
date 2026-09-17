@@ -1,14 +1,14 @@
-version: "3.8"
-
 services:
   backend:
-    build: .
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: mog-backend
     ports:
       - "8000:8000"
     restart: unless-stopped
     volumes:
-      - .:/app   # горячая перезагрузка кода при разработке
+      - ./backend:/app   # <-- важно: не ".", а "./backend"
     networks:
       - app-network
 

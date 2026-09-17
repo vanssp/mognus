@@ -1,10 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="Story Generator API")
-
-print(1)
 
 # Разрешаем запросы с фронтенда (Vite по умолчанию на 5173)
 app.add_middleware(
@@ -20,11 +18,15 @@ class PromptRequest(BaseModel):
 
 
 class StoryResponse(BaseModel):
-    story: str
+    # Правильный способ сделать поле необязательным (Python 3.10+)
+    story: str or None = None
 
 
 @app.post("/generate", response_model=StoryResponse)
 def generate_story(data: PromptRequest):
-    # Здесь позже подключишь настоящую генерацию (LLM и т.д.)
+    if not data.prompt:
+        raise HTTPException(status_code=400, detail="prompt обязателен")
+
     generated = f"Сгенерированная история по промпту: «{data.prompt}»"
-    return StoryResponse
+    # Возвращаем ЭКЗЕМПЛЯР, передавая значение в поле story
+    return StoryResponse(story=generated)

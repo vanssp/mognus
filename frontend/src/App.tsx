@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const MAX_LENGTH = 200;
-const API_URL = "http://localhost:8000/generate";
+const API_URL = "/api/generate";
 
 function App() {
   const [prompt, setPrompt] = useState("");
