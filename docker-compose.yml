@@ -8,9 +8,11 @@ services:
       - "8000:8000"
     restart: unless-stopped
     volumes:
-      - ./backend:/app   # <-- важно: не ".", а "./backend"
+      - ./backend:/app
     networks:
       - app-network
+    depends_on:
+      - ollama
 
   frontend:
     build:
@@ -23,6 +25,20 @@ services:
     networks:
       - app-network
 
+  ollama:
+    image: ollama/ollama:latest
+    container_name: mog-ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  ollama_data:
