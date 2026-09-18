@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 OLLAMA_URL = "http://ollama:11434/api/generate"
-MODEL_NAME = "qwen2.5:1.5b-q4_0"   # оптимально для 2 vCPU / 4 ГБ RAM
+MODEL_NAME = "qwen2.5:1.5b"
 
 
 class PromptRequest(BaseModel):
