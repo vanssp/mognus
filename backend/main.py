@@ -2,26 +2,28 @@ import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from typing import Optional
 
 app = FastAPI(title="Story Generator API")
 
+# CORS: фронтенд на порту 80, поэтому localhost без порта
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost", "http://127.0.0.1"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 OLLAMA_URL = "http://ollama:11434/api/generate"
-MODEL_NAME = "qwen2.5:3b"
+MODEL_NAME = "qwen2.5:1.5b-q4_0"   # оптимально для 2 vCPU / 4 ГБ RAM
 
 
 class PromptRequest(BaseModel):
-    prompt: str = Field(..., max_length=200)
+    prompt: str = Field(..., max_length=500)
 
 
 class StoryResponse(BaseModel):
-    story: str or None = None
+    story: Optional[str] = None
 
 
 @app.post("/generate", response_model=StoryResponse)
@@ -29,12 +31,13 @@ async def generate_story(data: PromptRequest):
     if not data.prompt:
         raise HTTPException(status_code=400, detail="prompt обязателен")
 
-    # Системный промпт: задаём роль модели
     system_prompt = (
-        "посчитай: "
+        "Ты — диетолог. задача распознать продукты и их вес, рассчитать калории, белки, жиры и углеводы. "
+        "Отвечай кратко и только на русском. Формат ответа:\n"
+        "Продукт — вес — калории — Б/Ж/У."
     )
 
-    full_prompt = f"{system_prompt}{data.prompt}"
+    full_prompt = f"{system_prompt}\n\n{data.prompt}"
 
     try:
         async with httpx.AsyncClient(timeout=600.0) as client:
@@ -43,10 +46,12 @@ async def generate_story(data: PromptRequest):
                 json={
                     "model": MODEL_NAME,
                     "prompt": full_prompt,
-                    "stream": False,       # ждём весь ответ целиком
+                    "stream": False,
                     "options": {
-                        "temperature": 0.8,   # креативность
-                        "num_predict": 500,   # лимит токенов в ответе
+                        "temperature": 0.3,     # меньше фантазии — точнее расчёты
+                        "num_predict": 512,      # 512 токенов хватает для КБЖУ
+                        "top_p": 0.9,
+                        "repeat_penalty": 1.1,   # не повторяет одно и то же
                     },
                 },
             )
@@ -73,5 +78,5 @@ async def generate_story(data: PromptRequest):
     except httpx.TimeoutException:
         raise HTTPException(
             status_code=504,
-            detail="Модель слишком долго генерировала ответ. Попробуй уменьшить prompt или num_predict.",
+            detail="Модель слишком долго генерировала ответ. Попробуй уменьшить prompt.",
         )

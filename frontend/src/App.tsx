@@ -29,18 +29,18 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Введите промпт для истории</h1>
+      <h1>Что ты сегодня съел:</h1>
       <textarea
         value={prompt}
         maxLength={MAX_LENGTH}
         onChange={(e) => setPrompt(e.target.value)}
-        placeholder="Например: история о космонавте, застрявшем на Марсе"
+        placeholder="Например: Куриное филе вареное 10000 грамм"
       />
       <div className="counter">
         {prompt.length} / {MAX_LENGTH}
       </div>
       <button onClick={handleGenerate} disabled={loading || !prompt.trim()}>
-        {loading ? "Генерация..." : "Сгенерировать"}
+        {loading ? "Подсчет КБЖУ..." : "Посчитать КБЖУ"}
       </button>
       {story && <div className="result">{story}</div>}
     </div>

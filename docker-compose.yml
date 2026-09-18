@@ -29,12 +29,21 @@ services:
     image: ollama/ollama:latest
     container_name: mog-ollama
     restart: unless-stopped
+    environment:
+      - OLLAMA_NUM_THREADS=2
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE=2m
+      - OLLAMA_NUM_PARALLEL=1
     ports:
       - "11434:11434"
     volumes:
       - ollama_data:/root/.ollama
     networks:
       - app-network
+    deploy:
+      resources:
+        limits:
+          memory: 2800M
 
 networks:
   app-network:
