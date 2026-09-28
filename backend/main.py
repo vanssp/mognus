@@ -6,7 +6,6 @@ from typing import Optional
 
 app = FastAPI(title="Story Generator API")
 
-# CORS: фронтенд на порту 80, поэтому localhost без порта
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost", "http://127.0.0.1"],
@@ -31,10 +30,51 @@ async def generate_story(data: PromptRequest):
     if not data.prompt:
         raise HTTPException(status_code=400, detail="prompt обязателен")
 
+    broken_words = [
+        "член",
+        "хуй",
+        "минет",
+        "киска",
+        "сосать",
+        "лизать",
+        "очко",
+        "жопа",
+        "попа",
+        "блядь",
+        "блять",
+        "ебля",
+        "ебаться",
+        "говно",
+        "гамно",
+        "какашки",
+        "кал",
+        "секс",
+        "взломать",
+        "hack",
+        "sql",
+        "delete",
+        "drop",
+        "admin",
+        "пароль",
+        "password",
+        "token",
+        "ключ",
+        "secret",
+        "root",
+        "sudo",
+        "rm",
+        "format",
+        "virus",
+        "malware"
+    ]
+    for w in broken_words:
+        if w in data.prompt:
+            raise HTTPException(status_code=403, detail="Запрещенные слова использовать нельзя...")
+
     system_prompt = (
-        "Ты — диетолог. задача распознать продукты и их вес, рассчитать калории, белки, жиры и углеводы. "
-        "Отвечай кратко и только на русском. Формат ответа:\n"
-        "Продукт — вес — калории — Б/Ж/У."
+        "Распознай продукты и их вес, затем рассчитай каллории, белки, жиры и углеводы. "
+        "Отвечай коротко на русском. Формат ответа:\n"
+        "Продукт — вес — калории — Б/Ж/У. в конце выводи общую сумму КБЖУ:"
     )
 
     full_prompt = f"{system_prompt}\n\n{data.prompt}"
