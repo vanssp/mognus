@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smoke Lounge — Кальянная</title>
+<style>
+  :root {
+    --bg: #0e0e10;
+    --bg2: #17171a;
+    --accent: #d9a441;
+    --text: #f2f2f2;
+    --muted: #9a9a9a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(14,14,16,0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--accent);
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+  }
+  .nav-links a {
+    font-size: 15px;
+    color: var(--muted);
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 26px;
+    height: 2px;
+    background: var(--text);
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+      url('https://images.unsplash.com/photo-1620921575008-d3b8d3f6c56d?q=80&w=1600') center/cover no-repeat;
+    padding: 100px 20px 60px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero p {
+    color: var(--muted);
+    font-size: clamp(15px, 2vw, 19px);
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--accent);
+    color: #111;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(217,164,65,0.35);
+  }
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+  }
+
+  /* SECTION TITLES */
+  .section { padding: 90px 0; }
+  .section-title {
+    text-align: center;
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    max-width: 550px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+  }
+
+  /* ABOUT */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .about img {
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+  .about h2 { font-size: 30px; margin-bottom: 18px; }
+  .about p { color: var(--muted); margin-bottom: 16px; }
+
+  /* MENU / CARDS */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .card {
+    background: var(--bg2);
+    border-radius: 18px;
+    padding: 30px 24px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform .25s, border-color .25s;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+  }
+  .card .icon { font-size: 40px; margin-bottom: 16px; }
+  .card h3 { margin-bottom: 10px; font-size: 19px; }
+  .card p { color: var(--muted); font-size: 14px; }
+
+  /* GALLERY */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;    transition: transform .3s;
+  }
+  .gallery img:hover { transform: scale(1.05); }
+
+  /* CONTACTS */
+  .contacts {
+    background: var(--bg2);
+    border-radius: 20px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .contacts h3 { margin-bottom: 14px; font-size: 22px; }
+  .contact-item { margin-bottom: 12px; color: var(--muted); }
+  .contact-item b { color: var(--text); }
+  .map {
+    border-radius: 14px;
+    overflow: hidden;
+    min-height: 250px;
+  }
+  .map iframe { width: 100%; height: 100%; min-height: 250px; border: 0; }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  /* FLOATING BUTTON */
+  .float-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--accent);
+    color: #111;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-weight: 700;
+    z-index: 99;
+    box-shadow: 0 10px 25px rgba(217,164,65,0.4);
+  }
+
+  /* ===== ADAPTIVE ===== */
+  @media (max-width: 900px) {
+    .about { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .contacts { grid-template-columns: 1fr; padding: 30px; }
+  }
+  @media (max-width: 640px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0; right: 0;
+      background: var(--bg2);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      display: none;
+    }
+    .nav-links.open { display: flex; }
+    .burger { display: flex; }
+    .grid { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .hero { padding-top: 90px; }
+    .float-btn { right: 16px; bottom: 16px; padding: 12px 18px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">SMOKE LOUNGE</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Атмосфера, <span>дым</span> и вкус</h1>
+    <p>Лучшая кальянная в городе: авторские миксы, уютный интерьер и сервис на высшем уровне.</p>
+    <a href="#contacts" class="btn">Забронировать столик</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800" alt="Интерьер">
+    <div>
+      <h2>О нашей кальянной</h2>
+      <p>Мы создали пространство, где можно расслабиться после трудного дня, встретиться с друзьями или провести вечер в приятной компании.</p>
+      <p>Опытные кальянщики, качественный табак и уникальные авторские рецепты миксов — всё для вашего удовольствия.</p>
+      <a href="#menu" class="btn btn-outline">Смотреть меню</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="menu" style="background: var(--bg2);">
+  <div class="container">
+    <h2 class="section-title">Наше меню</h2>
+    <p class="section-sub">Выберите то, что подходит именно вам</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">💨</div>
+        <h3>Классические миксы</h3>
+        <p>Проверенные временем вкусы для истинных ценителей.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🍹</div>
+        <h3>Авторские кальяны</h3>
+        <p>Уникальные рецепты от наших мастеров.</p>
+      </div>
+      <div class="card">
+        <div class="icon">☕</div>
+        <h3>Напитки и кухня</h3>
+        <p>Чай, кофе, закуски и легкие блюда к кальяну.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <h2 class="section-title">Галерея</h2>
+    <p class="section-sub">Загляните к нам заранее</p>    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=500" alt="">
+      <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=500" alt="">
+      <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=500" alt="">
+      <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=500" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contacts">
+  <div class="container">
+    <h2 class="section-title">Контакты</h2>
+    <p class="section-sub">Ждём вас каждый день</p>
+    <div class="contacts">
+      <div>
+        <h3>Как нас найти</h3>
+        <div class="contact-item"><b>Адрес:</b> г. Город, ул. Примерная, 10</div>
+        <div class="contact-item"><b>Телефон:</b> +7 (999) 123-45-67</div>
+        <div class="contact-item"><b>Часы работы:</b> ежедневно 14:00 – 03:00</div>
+        <a href="tel:+79991234567" class="btn" style="margin-top:16px;">Позвонить</a>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Moscow&output=embed" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="tel:+79991234567" class="float-btn">📞 Позвонить</a>
+
+<footer>
+  © 2024 Smoke Lounge. Все права защищены.
+</footer>
+
+</body>
+</html>

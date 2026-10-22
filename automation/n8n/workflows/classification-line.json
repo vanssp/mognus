@@ -1,0 +1,133 @@
+{
+  "name": "mognu-classification-line",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "practice",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook-1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "practice"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a1",
+              "name": "text",
+              "value": "={{ $json.body.text }}",
+              "type": "string"
+            },
+            {
+              "id": "a2",
+              "name": "source",
+              "value": "webhook",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "edit-1",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [260, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://158.160.217.42:11434/v1/chat/completions",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"qwen2.5:1.5b\",\n  \"temperature\": 0,\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Ты классификатор сообщений. Отвечай ТОЛЬКО валидным JSON без markdown. Схема: {\\\"category\\\":\\\"question|task|chitchat|other\\\",\\\"priority\\\":\\\"low|medium|high\\\",\\\"summary\\\":\\\"кратко\\\"}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Классифицируй сообщение:\\n\" + $json.text\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "http-1",
+      "name": "HTTP Ollama",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [520, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const content = $json.choices?.[0]?.message?.content ?? \"\";\nconst cleaned = String(content).replace(/```json|```/g, \"\").trim();\nlet ok = false;\nlet parsed = null;\nlet reason = \"\";\nif (!cleaned) {\n  reason = \"empty_content\";\n} else {\n  try {\n    parsed = JSON.parse(cleaned);\n    const cats = [\"question\", \"task\", \"chitchat\", \"other\"];\n    const pris = [\"low\", \"medium\", \"high\"];\n    if (!cats.includes(parsed.category)) reason = \"bad_category\";\n    else if (!pris.includes(parsed.priority)) reason = \"bad_priority\";\n    else if (!parsed.summary || String(parsed.summary).length < 2) reason = \"bad_summary\";\n    else ok = true;\n  } catch (e) {\n    reason = \"invalid_json\";\n  }\n}\nconst text = $(\"Edit Fields\").item.json.text;\nreturn [{ json: { llm_ok: ok, reason: reason || \"ok\", category: parsed?.category ?? null, priority: parsed?.priority ?? null, summary: parsed?.summary ?? null, llm_raw: content, text } }];"
+      },
+      "id": "code-1",
+      "name": "Validate LLM",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [780, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.llm_ok }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "if-1",
+      "name": "IF llm_ok",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1040, 0]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO webhook_classifications (raw_text, category, priority, summary, llm_raw)\nVALUES ($1, $2, $3, $4, $5)\nRETURNING id, created_at;",
+        "options": {
+          "queryReplacement": "={{ [$json.text, $json.category, $json.priority, $json.summary, $json.llm_raw] }}"
+        }
+      },
+      "id": "pg-1",
+      "name": "Postgres Insert",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1300, -120],
+      "credentials": {
+        "postgres": {
+          "id": "REPLACE_ME",
+          "name": "mognu Postgres"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Edit Fields", "type": "main", "index": 0 }]]
+    },
+    "Edit Fields": {
+      "main": [[{ "node": "HTTP Ollama", "type": "main", "index": 0 }]]
+    },
+    "HTTP Ollama": {
+      "main": [[{ "node": "Validate LLM", "type": "main", "index": 0 }]]
+    },
+    "Validate LLM": {
+      "main": [[{ "node": "IF llm_ok", "type": "main", "index": 0 }]]
+    },
+    "IF llm_ok": {
+      "main": [
+        [{ "node": "Postgres Insert", "type": "main", "index": 0 }],
+        []
+      ]
+    }
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

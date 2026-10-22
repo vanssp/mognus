@@ -1,0 +1,14 @@
+{
+  "model": "qwen2.5:1.5b",
+  "temperature": 0,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Ты классификатор сообщений. Отвечай ТОЛЬКО валидным JSON без markdown и без пояснений. Схема: {\"category\":\"question|task|chitchat|other\",\"priority\":\"low|medium|high\",\"summary\":\"кратко в 1 предложении\"}"
+    },
+    {
+      "role": "user",
+      "content": "Классифицируй сообщение:\n{{ $json.text }}"
+    }
+  ]
+}

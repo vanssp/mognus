@@ -69,12 +69,12 @@ async def generate_story(data: PromptRequest):
     ]
     for w in broken_words:
         if w in data.prompt:
-            raise HTTPException(status_code=403, detail="Запрещенные слова использовать нельзя...")
+            return StoryResponse(story="Запрещенные слова использовать нельзя...")
 
     system_prompt = (
         "Распознай продукты и их вес, затем рассчитай каллории, белки, жиры и углеводы. "
         "Отвечай коротко на русском. Формат ответа:\n"
-        "Продукт — вес — калории — Б/Ж/У. в конце выводи общую сумму КБЖУ:"
+        "Продукт — вес — калории — Б/Ж/У:"
     )
 
     full_prompt = f"{system_prompt}\n\n{data.prompt}"
