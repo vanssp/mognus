@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
 CREATE TABLE IF NOT EXISTS webhook_classifications (
   id         BIGSERIAL PRIMARY KEY,
   raw_text   TEXT NOT NULL,

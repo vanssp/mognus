@@ -46,9 +46,9 @@ services:
 #        limits:
 #          memory: 2800M
 
-  # Postgres for n8n classification line (automation/)
+  # Postgres + pgvector for n8n / RAG
   postgres:
-    image: postgres:16
+    image: pgvector/pgvector:pg16
     container_name: mog-postgres
     restart: unless-stopped
     environment:
@@ -60,6 +60,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./automation/db/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+      - ./automation/week-04/db_rag.sql:/docker-entrypoint-initdb.d/db_rag.sql:ro
     networks:
       - app-network
     healthcheck:
@@ -67,7 +68,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-
   pgadmin:
     image: dpage/pgadmin4:latest
     container_name: mog-pgadmin
@@ -85,11 +85,9 @@ services:
         condition: service_healthy
     networks:
       - app-network
-
 networks:
   app-network:
     driver: bridge
-
 volumes:
 #  ollama_data:
   pgdata:
