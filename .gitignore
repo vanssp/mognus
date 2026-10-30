@@ -11,3 +11,11 @@ frontend/node_modules/
 frontend/dist/
 *.log
 automation/week-03/.env.example
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/tools/credits-state.json
+android/tools/image-report.json
+*.apk
+*.aab
