@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "question": "Что такое RAG?",
+    "expected_sources": ["rag.md"],
+    "expected_answer_contains": ["поиск", "контекст"]
+  },
+  {
+    "id": "q2",
+    "question": "Какая embedding-модель используется?",
+    "expected_sources": ["rag.md"],
+    "expected_answer_contains": ["nomic-embed-text"]
+  },
+  {
+    "id": "q3",
+    "question": "Какая размерность вектора у embeddings?",
+    "expected_sources": ["rag.md"],
+    "expected_answer_contains": ["768"]
+  },
+  {
+    "id": "q4",
+    "question": "Где хранятся векторы?",
+    "expected_sources": ["rag.md"],
+    "expected_answer_contains": ["PostgreSQL", "pgvector"]
+  },
+  {
+    "id": "q5",
+    "question": "Какая чат-модель используется в RAG?",
+    "expected_sources": ["rag.md"],
+    "expected_answer_contains": ["qwen"]
+  },
+  {
+    "id": "q6",
+    "question": "Что делает week-03?",
+    "expected_sources": ["week03.md"],
+    "expected_answer_contains": ["classify", "tool"]
+  },
+  {
+    "id": "q7",
+    "question": "Какой эндпоинт у сервиса классификации?",
+    "expected_sources": ["week03.md"],
+    "expected_answer_contains": ["/classify"]
+  },
+  {
+    "id": "q8",
+    "question": "Какие tools есть в week-03?",
+    "expected_sources": ["week03.md"],
+    "expected_answer_contains": ["save_to_db", "notify_telegram"]
+  },
+  {
+    "id": "q9",
+    "question": "В какую таблицу пишет save_to_db?",
+    "expected_sources": ["week03.md"],
+    "expected_answer_contains": ["webhook_classifications"]
+  },
+  {
+    "id": "q10",
+    "question": "Какой стек у week-03?",
+    "expected_sources": ["week03.md"],
+    "expected_answer_contains": ["FastAPI", "Ollama"]
+  }
+]
