@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "nameA": "Сизый голубь",
+    "nameB": "Беркут",
+    "winner": "b",
+    "explanation": "Беркут сильнее голубя: он больше, крепче и охотится на птиц.",
+    "imageA": "rock-dove.webp",
+    "imageB": "golden-eagle.webp"
+  },
+  {
+    "id": 2,
+    "nameA": "Белоголовый орлан",
+    "nameB": "Кряква",
+    "winner": "a",
+    "explanation": "Орлан крупнее утки и легко поднимает её в когтях.",
+    "imageA": "bald-eagle.webp",
+    "imageB": "mallard.webp"
+  },
+  {
+    "id": 3,
+    "nameA": "Филиппинский орёл",
+    "nameB": "Домовый воробей",
+    "winner": "a",
+    "explanation": "Филиппинский орёл — огромный хищник, а воробей совсем крошечный.",
+    "imageA": "philippine-eagle.webp",
+    "imageB": "house-sparrow.webp"
+  },
+  {
+    "id": 4,
+    "nameA": "Озёрная чайка",
+    "nameB": "Скопа",
+    "winner": "b",
+    "explanation": "Скопа — рыбоядный хищник: она крупнее и сильнее чайки.",
+    "imageA": "black-headed-gull.webp",
+    "imageB": "osprey.webp"
+  },
+  {
+    "id": 5,
+    "nameA": "Сапсан",
+    "nameB": "Деревенская ласточка",
+    "winner": "a",
+    "explanation": "Сапсан мощнее ласточки и бьёт добычу в быстром пике.",
+    "imageA": "peregrine-falcon.webp",
+    "imageB": "barn-swallow.webp"
+  },
+  {
+    "id": 6,
+    "nameA": "Белая куропатка",
+    "nameB": "Белая сова",
+    "winner": "b",
+    "explanation": "Белая сова — хищник и легко берёт куропатку.",
+    "imageA": "willow-ptarmigan.webp",
+    "imageB": "snowy-owl.webp"
+  },
+  {
+    "id": 7,
+    "nameA": "Филин",
+    "nameB": "Сойка",
+    "winner": "a",
+    "explanation": "Филин намного крупнее сойки и охотится на птиц её размера.",
+    "imageA": "eurasian-eagle-owl.webp",
+    "imageB": "eurasian-jay.webp"
+  },
+  {
+    "id": 8,
+    "nameA": "Андский кондор",
+    "nameB": "Обыкновенная горлица",
+    "winner": "a",
+    "explanation": "Кондор — одна из самых больших летающих птиц, горлица ему не соперник.",
+    "imageA": "andean-condor.webp",
+    "imageB": "european-turtle-dove.webp"
+  },
+  {
+    "id": 9,
+    "nameA": "Обыкновенный скворец",
+    "nameB": "Гриф-индейка",
+    "winner": "b",
+    "explanation": "Гриф крупнее скворца и гораздо сильнее клювом.",
+    "imageA": "common-starling.webp",
+    "imageB": "turkey-vulture.webp"
+  },
+  {
+    "id": 10,
+    "nameA": "Ястреб-тетеревятник",
+    "nameB": "Зяблик",
+    "winner": "a",
+    "explanation": "Ястреб — лесной охотник, а зяблик для него небольшая добыча.",
+    "imageA": "eurasian-goshawk.webp",
+    "imageB": "common-chaffinch.webp"
+  },
+  {
+    "id": 11,
+    "nameA": "Пуночка",
+    "nameB": "Кречет",
+    "winner": "b",
+    "explanation": "Кречет — самый крупный сокол, пуночка рядом с ним маленькая.",
+    "imageA": "snow-bunting.webp",
+    "imageB": "gyrfalcon.webp"
+  },
+  {
+    "id": 12,
+    "nameA": "Бородач",
+    "nameB": "Альпийская галка",
+    "winner": "a",
+    "explanation": "Бородач намного крупнее и мощнее галки.",
+    "imageA": "bearded-vulture.webp",
+    "imageB": "alpine-chough.webp"
+  },
+  {
+    "id": 13,
+    "nameA": "Птица-секретарь",
+    "nameB": "Цесарка",
+    "winner": "a",
+    "explanation": "Секретарь бьёт добычу сильными ногами, цесарка так не умеет.",
+    "imageA": "secretarybird.webp",
+    "imageB": "helmeted-guineafowl.webp"
+  },
+  {
+    "id": 14,
+    "nameA": "Тукан-токо",
+    "nameB": "Гарпия",
+    "winner": "b",
+    "explanation": "У гарпии одни из самых сильных лап среди орлов, тукан слабее.",
+    "imageA": "toco-toucan.webp",
+    "imageB": "harpy-eagle.webp"
+  },
+  {
+    "id": 15,
+    "nameA": "Орлан-белохвост",
+    "nameB": "Серая цапля",
+    "winner": "a",
+    "explanation": "Орлан тяжелее цапли и сильнее в схватке.",
+    "imageA": "white-tailed-eagle.webp",
+    "imageB": "grey-heron.webp"
+  },
+  {
+    "id": 16,
+    "nameA": "Перепел",
+    "nameB": "Африканский страус",
+    "winner": "b",
+    "explanation": "Страус — самая большая птица на Земле, перепел ему по колено.",
+    "imageA": "common-quail.webp",
+    "imageB": "common-ostrich.webp"
+  },
+  {
+    "id": 17,
+    "nameA": "Эму",
+    "nameB": "Банкивская курица",
+    "winner": "a",
+    "explanation": "Эму намного выше и сильнее курицы.",
+    "imageA": "emu.webp",
+    "imageB": "red-junglefowl.webp"
+  },
+  {
+    "id": 18,
+    "nameA": "Шлемоносный казуар",
+    "nameB": "Мускусная утка",
+    "winner": "a",
+    "explanation": "Казуар крупный и сильно бьёт ногой, утка слабее.",
+    "imageA": "southern-cassowary.webp",
+    "imageB": "muscovy-duck.webp"
+  },
+  {
+    "id": 19,
+    "nameA": "Гагарка",
+    "nameB": "Императорский пингвин",
+    "winner": "b",
+    "explanation": "Императорский пингвин выше и тяжелее гагарки.",
+    "imageA": "razorbill.webp",
+    "imageB": "emperor-penguin.webp"
+  },
+  {
+    "id": 20,
+    "nameA": "Странствующий альбатрос",
+    "nameB": "Малый буревестник",
+    "winner": "a",
+    "explanation": "У альбатроса огромный размах крыльев, буревестник гораздо меньше.",
+    "imageA": "wandering-albatross.webp",
+    "imageB": "manx-shearwater.webp"
+  },
+  {
+    "id": 21,
+    "nameA": "Речная крачка",
+    "nameB": "Розовый пеликан",
+    "winner": "b",
+    "explanation": "Пеликан огромный, а крачка лёгкая и небольшая.",
+    "imageA": "common-tern.webp",
+    "imageB": "great-white-pelican.webp"
+  },
+  {
+    "id": 22,
+    "nameA": "Лебедь-кликун",
+    "nameB": "Чирок-свистунок",
+    "winner": "a",
+    "explanation": "Лебедь намного тяжелее чирка и сильнее бьёт крыльями.",
+    "imageA": "whooper-swan.webp",
+    "imageB": "eurasian-teal.webp"
+  },
+  {
+    "id": 23,
+    "nameA": "Канадская казарка",
+    "nameB": "Чибис",
+    "winner": "a",
+    "explanation": "Казарка крупнее и тяжелее чибиса.",
+    "imageA": "canada-goose.webp",
+    "imageB": "northern-lapwing.webp"
+  },
+  {
+    "id": 24,
+    "nameA": "Бекас",
+    "nameB": "Японский журавль",
+    "winner": "b",
+    "explanation": "Журавль высокий и сильный, бекас — маленькая птица.",
+    "imageA": "common-snipe.webp",
+    "imageB": "red-crowned-crane.webp"
+  },
+  {
+    "id": 25,
+    "nameA": "Обыкновенный фламинго",
+    "nameB": "Кулик-воробей",
+    "winner": "a",
+    "explanation": "Фламинго намного крупнее крошечного кулика.",
+    "imageA": "greater-flamingo.webp",
+    "imageB": "little-stint.webp"
+  },
+  {
+    "id": 26,
+    "nameA": "Иволга",
+    "nameB": "Марабу",
+    "winner": "b",
+    "explanation": "Марабу — огромный аист с мощным клювом, иволга гораздо мельче.",
+    "imageA": "eurasian-golden-oriole.webp",
+    "imageB": "marabou-stork.webp"
+  },
+  {
+    "id": 27,
+    "nameA": "Большой баклан",
+    "nameB": "Малая поганка",
+    "winner": "a",
+    "explanation": "Баклан крупнее поганки и сильнее ныряет за крупной рыбой.",
+    "imageA": "great-cormorant.webp",
+    "imageB": "little-grebe.webp"
+  },
+  {
+    "id": 28,
+    "nameA": "Серый гусь",
+    "nameB": "Варакушка",
+    "winner": "a",
+    "explanation": "Гусь тяжёлый и крепкий, варакушка — маленькая певчая птица.",
+    "imageA": "greylag-goose.webp",
+    "imageB": "bluethroat.webp"
+  },
+  {
+    "id": 29,
+    "nameA": "Королёк",
+    "nameB": "Глухарь",
+    "winner": "b",
+    "explanation": "Глухарь тяжёлый, а королёк — одна из самых маленьких птиц Европы.",
+    "imageA": "goldcrest.webp",
+    "imageB": "western-capercaillie.webp"
+  },
+  {
+    "id": 30,
+    "nameA": "Индийский павлин",
+    "nameB": "Горихвостка",
+    "winner": "a",
+    "explanation": "Павлин намного крупнее и тяжелее горихвостки.",
+    "imageA": "indian-peafowl.webp",
+    "imageB": "common-redstart.webp"
+  },
+  {
+    "id": 31,
+    "nameA": "Волнистый попугайчик",
+    "nameB": "Желтохохлый какаду",
+    "winner": "b",
+    "explanation": "Какаду крупнее и клюв у него гораздо сильнее, чем у волнистого попугайчика.",
+    "imageA": "budgerigar.webp",
+    "imageB": "sulphur-crested-cockatoo.webp"
+  },
+  {
+    "id": 32,
+    "nameA": "Красный ара",
+    "nameB": "Неразлучник",
+    "winner": "a",
+    "explanation": "Ара большой попугай с мощным клювом, неразлучник маленький.",
+    "imageA": "scarlet-macaw.webp",
+    "imageB": "rosy-faced-lovebird.webp"
+  },
+  {
+    "id": 33,
+    "nameA": "Пингвин Адели",
+    "nameB": "Качурка",
+    "winner": "a",
+    "explanation": "Пингвин Адели плотный и сильный, качурка лёгкая как пёрышко.",
+    "imageA": "adelie-penguin.webp",
+    "imageB": "european-storm-petrel.webp"
+  },
+  {
+    "id": 34,
+    "nameA": "Моевка",
+    "nameB": "Северная олуша",
+    "winner": "b",
+    "explanation": "Олуша крупнее моевки и ныряет с большой высоты.",
+    "imageA": "black-legged-kittiwake.webp",
+    "imageB": "northern-gannet.webp"
+  },
+  {
+    "id": 35,
+    "nameA": "Большой фрегат",
+    "nameB": "Красноклювый фаэтон",
+    "winner": "a",
+    "explanation": "Фрегат крупнее фаэтона и отнимает добычу у других морских птиц.",
+    "imageA": "great-frigatebird.webp",
+    "imageB": "red-billed-tropicbird.webp"
+  },
+  {
+    "id": 36,
+    "nameA": "Красноклювый ток",
+    "nameB": "Кафрский рогатый ворон",
+    "winner": "b",
+    "explanation": "Кафрский рогатый ворон намного крупнее и клюв у него тяжелее.",
+    "imageA": "northern-red-billed-hornbill.webp",
+    "imageB": "southern-ground-hornbill.webp"
+  },
+  {
+    "id": 37,
+    "nameA": "Тигр",
+    "nameB": "Камышовый кот",
+    "winner": "a",
+    "explanation": "Тигр — самый крупный кот на Земле, камышовый кот ему не соперник.",
+    "imageA": "tiger.webp",
+    "imageB": "jungle-cat.webp"
+  },
+  {
+    "id": 38,
+    "nameA": "Лев",
+    "nameB": "Каракал",
+    "winner": "a",
+    "explanation": "Лев намного тяжелее каракала и сильнее в схватке.",
+    "imageA": "lion.webp",
+    "imageB": "caracal.webp"
+  },
+  {
+    "id": 39,
+    "nameA": "Оцелот",
+    "nameB": "Ягуар",
+    "winner": "b",
+    "explanation": "У ягуара самое сильное укусы среди больших кошек, оцелот гораздо мельче.",
+    "imageA": "ocelot.webp",
+    "imageB": "jaguar.webp"
+  },
+  {
+    "id": 40,
+    "nameA": "Леопард",
+    "nameB": "Сервал",
+    "winner": "a",
+    "explanation": "Леопард крепче и тяжелее длинноногого сервала.",
+    "imageA": "leopard.webp",
+    "imageB": "serval.webp"
+  },
+  {
+    "id": 41,
+    "nameA": "Манул",
+    "nameB": "Пума",
+    "winner": "b",
+    "explanation": "Пума крупная кошка, а манул — небольшой пушистый кот.",
+    "imageA": "pallas-s-cat.webp",
+    "imageB": "cougar.webp"
+  },
+  {
+    "id": 42,
+    "nameA": "Гепард",
+    "nameB": "Барханный кот",
+    "winner": "a",
+    "explanation": "Гепард намного больше барханного кота, хотя и легче других больших кошек.",
+    "imageA": "cheetah.webp",
+    "imageB": "sand-cat.webp"
+  },
+  {
+    "id": 43,
+    "nameA": "Снежный барс",
+    "nameB": "Рыжая рысь",
+    "winner": "a",
+    "explanation": "Снежный барс тяжелее и сильнее рыжей рыси.",
+    "imageA": "snow-leopard.webp",
+    "imageB": "bobcat.webp"
+  },
+  {
+    "id": 44,
+    "nameA": "Бенгальский кот",
+    "nameB": "Дымчатый леопард",
+    "winner": "b",
+    "explanation": "Дымчатый леопард крупнее и клыки у него длиннее, чем у бенгальского кота.",
+    "imageA": "leopard-cat.webp",
+    "imageB": "clouded-leopard.webp"
+  },
+  {
+    "id": 45,
+    "nameA": "Обыкновенная рысь",
+    "nameB": "Лесной кот",
+    "winner": "a",
+    "explanation": "Рысь выше и мощнее лесного кота.",
+    "imageA": "eurasian-lynx.webp",
+    "imageB": "european-wildcat.webp"
+  },
+  {
+    "id": 46,
+    "nameA": "Земляной волк",
+    "nameB": "Полосатая гиена",
+    "winner": "b",
+    "explanation": "Полосатая гиена крупнее: земляной волк почти не ест мяса и слабее.",
+    "imageA": "aardwolf.webp",
+    "imageB": "striped-hyena.webp"
+  },
+  {
+    "id": 47,
+    "nameA": "Пятнистая гиена",
+    "nameB": "Большеухая лисица",
+    "winner": "a",
+    "explanation": "Пятнистая гиена очень сильная, большеухая лисица питается насекомыми.",
+    "imageA": "spotted-hyena.webp",
+    "imageB": "bat-eared-fox.webp"
+  },
+  {
+    "id": 48,
+    "nameA": "Серый волк",
+    "nameB": "Обыкновенная лисица",
+    "winner": "a",
+    "explanation": "Волк крупнее лисицы и охотится стаей на большую добычу.",
+    "imageA": "gray-wolf.webp",
+    "imageB": "red-fox.webp"
+  },
+  {
+    "id": 49,
+    "nameA": "Чепрачный шакал",
+    "nameB": "Гиеновидная собака",
+    "winner": "b",
+    "explanation": "Гиеновидная собака крупнее шакала и берёт добычу сообща.",
+    "imageA": "black-backed-jackal.webp",
+    "imageB": "african-wild-dog.webp"
+  },
+  {
+    "id": 50,
+    "nameA": "Красный волк",
+    "nameB": "Корсак",
+    "winner": "a",
+    "explanation": "Красный волк сильнее и крупнее степной лисицы корсака.",
+    "imageA": "dhole.webp",
+    "imageB": "corsac-fox.webp"
+  },
+  {
+    "id": 51,
+    "nameA": "Майконг",
+    "nameB": "Гривистый волк",
+    "winner": "b",
+    "explanation": "Гривистый волк выше и тяжелее майконга.",
+    "imageA": "crab-eating-fox.webp",
+    "imageB": "maned-wolf.webp"
+  },
+  {
+    "id": 52,
+    "nameA": "Койот",
+    "nameB": "Американская лисица",
+    "winner": "a",
+    "explanation": "Койот крупнее маленькой американской лисицы.",
+    "imageA": "coyote.webp",
+    "imageB": "kit-fox.webp"
+  },
+  {
+    "id": 53,
+    "nameA": "Росомаха",
+    "nameB": "Горностай",
+    "winner": "a",
+    "explanation": "Росомаха крепкая и сильная, горностай — маленький хищник.",
+    "imageA": "wolverine.webp",
+    "imageB": "stoat.webp"
+  },
+  {
+    "id": 54,
+    "nameA": "Сурикат",
+    "nameB": "Медоед",
+    "winner": "b",
+    "explanation": "Медоед очень крепкий и бесстрашный, сурикат гораздо меньше.",
+    "imageA": "meerkat.webp",
+    "imageB": "honey-badger.webp"
+  },
+  {
+    "id": 55,
+    "nameA": "Барсук",
+    "nameB": "Ласка",
+    "winner": "a",
+    "explanation": "Барсук тяжёлый и сильный, ласка — один из самых маленьких хищников.",
+    "imageA": "european-badger.webp",
+    "imageB": "least-weasel.webp"
+  },
+  {
+    "id": 56,
+    "nameA": "Американская норка",
+    "nameB": "Калан",
+    "winner": "b",
+    "explanation": "Калан крупнее норки и легко дробит панцири ракушек.",
+    "imageA": "american-mink.webp",
+    "imageB": "sea-otter.webp"
+  },
+  {
+    "id": 57,
+    "nameA": "Гигантская выдра",
+    "nameB": "Восточная бескоготная выдра",
+    "winner": "a",
+    "explanation": "Гигантская выдра намного длиннее и сильнее маленькой бескоготной.",
+    "imageA": "giant-otter.webp",
+    "imageB": "asian-small-clawed-otter.webp"
+  },
+  {
+    "id": 58,
+    "nameA": "Тасманийский дьявол",
+    "nameB": "Пятнистохвостая сумчатая куница",
+    "winner": "a",
+    "explanation": "У тасманийского дьявола очень сильные челюсти, куница легче.",
+    "imageA": "tasmanian-devil.webp",
+    "imageB": "tiger-quoll.webp"
+  },
+  {
+    "id": 59,
+    "nameA": "Кольцехвостый мунго",
+    "nameB": "Фосса",
+    "winner": "b",
+    "explanation": "Фосса — самый крупный хищник Мадагаскара, мунго ей не соперник.",
+    "imageA": "ring-tailed-vontsira.webp",
+    "imageB": "fossa-animal.webp"
+  },
+  {
+    "id": 60,
+    "nameA": "Бурый медведь",
+    "nameB": "Енот-полоскун",
+    "winner": "a",
+    "explanation": "Бурый медведь во много раз тяжелее енота.",
+    "imageA": "brown-bear.webp",
+    "imageB": "raccoon.webp"
+  },
+  {
+    "id": 61,
+    "nameA": "Песец",
+    "nameB": "Белый медведь",
+    "winner": "b",
+    "explanation": "Белый медведь — крупнейший сухопутный хищник, песец рядом маленький.",
+    "imageA": "arctic-fox.webp",
+    "imageB": "polar-bear.webp"
+  },
+  {
+    "id": 62,
+    "nameA": "Барибал",
+    "nameB": "Американский барсук",
+    "winner": "a",
+    "explanation": "Барибал намного крупнее и сильнее барсука.",
+    "imageA": "american-black-bear.webp",
+    "imageB": "american-badger.webp"
+  },
+  {
+    "id": 63,
+    "nameA": "Большая панда",
+    "nameB": "Малая панда",
+    "winner": "a",
+    "explanation": "Большая панда тяжёлая и крепкая, малая панда размером с кошку.",
+    "imageA": "giant-panda.webp",
+    "imageB": "red-panda.webp"
+  },
+  {
+    "id": 64,
+    "nameA": "Бинтуронг",
+    "nameB": "Малайский медведь",
+    "winner": "b",
+    "explanation": "Малайский медведь — настоящий медведь и сильнее бинтуронга.",
+    "imageA": "binturong.webp",
+    "imageB": "sun-bear.webp"
+  },
+  {
+    "id": 65,
+    "nameA": "Губач",
+    "nameB": "Мусанг",
+    "winner": "a",
+    "explanation": "Губач крупный медведь, мусанг — небольшой зверёк.",
+    "imageA": "sloth-bear.webp",
+    "imageB": "asian-palm-civet.webp"
+  },
+  {
+    "id": 66,
+    "nameA": "Кинкажу",
+    "nameB": "Очковый медведь",
+    "winner": "b",
+    "explanation": "Очковый медведь намного тяжелее пушистого кинкажу.",
+    "imageA": "kinkajou.webp",
+    "imageB": "spectacled-bear.webp"
+  },
+  {
+    "id": 67,
+    "nameA": "Саванный слон",
+    "nameB": "Капский даман",
+    "winner": "a",
+    "explanation": "Слон — самое большое сухопутное животное, даман размером с кролика.",
+    "imageA": "african-bush-elephant.webp",
+    "imageB": "rock-hyrax.webp"
+  },
+  {
+    "id": 68,
+    "nameA": "Азиатский слон",
+    "nameB": "Чепрачный тапир",
+    "winner": "a",
+    "explanation": "Азиатский слон гораздо больше и сильнее тапира.",
+    "imageA": "asian-elephant.webp",
+    "imageB": "malayan-tapir.webp"
+  },
+  {
+    "id": 69,
+    "nameA": "Бородавочник",
+    "nameB": "Белый носорог",
+    "winner": "b",
+    "explanation": "Белый носорог тяжёлый и в броне, бородавочник ему не ровня.",
+    "imageA": "common-warthog.webp",
+    "imageB": "white-rhinoceros.webp"
+  },
+  {
+    "id": 70,
+    "nameA": "Чёрный носорог",
+    "nameB": "Трубкозуб",
+    "winner": "a",
+    "explanation": "Носорог намного крупнее трубкозуба и защищён толстой кожей.",
+    "imageA": "black-rhinoceros.webp",
+    "imageB": "aardvark.webp"
+  },
+  {
+    "id": 71,
+    "nameA": "Капибара",
+    "nameB": "Гиппопотам",
+    "winner": "b",
+    "explanation": "Бегемот огромный и очень сильный, капибара — просто большой грызун.",
+    "imageA": "capybara.webp",
+    "imageB": "hippopotamus.webp"
+  },
+  {
+    "id": 72,
+    "nameA": "Жираф",
+    "nameB": "Окапи",
+    "winner": "a",
+    "explanation": "Жираф выше и тяжелее своего лесного родственника окапи.",
+    "imageA": "giraffe.webp",
+    "imageB": "okapi.webp"
+  },
+  {
+    "id": 73,
+    "nameA": "Американский бизон",
+    "nameB": "Вилорог",
+    "winner": "a",
+    "explanation": "Бизон тяжёлый и мощный, вилорог быстрый, но гораздо легче.",
+    "imageA": "american-bison.webp",
+    "imageB": "pronghorn.webp"
+  },
+  {
+    "id": 74,
+    "nameA": "Нильгау",
+    "nameB": "Гаур",
+    "winner": "b",
+    "explanation": "Гаур — огромный дикий бык, нильгау заметно мельче.",
+    "imageA": "nilgai.webp",
+    "imageB": "gaur.webp"
+  },
+  {
+    "id": 75,
+    "nameA": "Африканский буйвол",
+    "nameB": "Импала",
+    "winner": "a",
+    "explanation": "Буйвол крепкий и рогатый, импала — лёгкая антилопа.",
+    "imageA": "african-buffalo.webp",
+    "imageB": "impala.webp"
+  },
+  {
+    "id": 76,
+    "nameA": "Толсторог",
+    "nameB": "Овцебык",
+    "winner": "b",
+    "explanation": "Овцебык тяжелее и стоит плотной «бронёй» из шерсти и рогов.",
+    "imageA": "bighorn-sheep.webp",
+    "imageB": "muskox.webp"
+  },
+  {
+    "id": 77,
+    "nameA": "Як",
+    "nameB": "Голубой баран",
+    "winner": "a",
+    "explanation": "Як намного массивнее голубого барана.",
+    "imageA": "wild-yak.webp",
+    "imageB": "bharal.webp"
+  },
+  {
+    "id": 78,
+    "nameA": "Лось",
+    "nameB": "Европейская косуля",
+    "winner": "a",
+    "explanation": "Лось — гигант среди оленей, косуля маленькая.",
+    "imageA": "moose.webp",
+    "imageB": "roe-deer.webp"
+  },
+  {
+    "id": 79,
+    "nameA": "Чернохвостый олень",
+    "nameB": "Вапити",
+    "winner": "b",
+    "explanation": "Вапити крупнее и рога у него тяжелее, чем у чернохвостого оленя.",
+    "imageA": "mule-deer.webp",
+    "imageB": "elk.webp"
+  },
+  {
+    "id": 80,
+    "nameA": "Бурчеллова зебра",
+    "nameB": "Газель Гранта",
+    "winner": "a",
+    "explanation": "Зебра тяжелее газели и сильнее бьёт копытом.",
+    "imageA": "plains-zebra.webp",
+    "imageB": "grant-s-gazelle.webp"
+  },
+  {
+    "id": 81,
+    "nameA": "Геренук",
+    "nameB": "Зебра Греви",
+    "winner": "b",
+    "explanation": "Зебра Греви крупнее и крепче тонкого геренука.",
+    "imageA": "gerenuk.webp",
+    "imageB": "grevy-s-zebra.webp"
+  },
+  {
+    "id": 82,
+    "nameA": "Лошадь Пржевальского",
+    "nameB": "Африканский осёл",
+    "winner": "a",
+    "explanation": "Лошадь Пржевальского массивнее дикого осла.",
+    "imageA": "przewalski-s-horse.webp",
+    "imageB": "african-wild-ass.webp"
+  },
+  {
+    "id": 83,
+    "nameA": "Кабан",
+    "nameB": "Ошейниковый пекари",
+    "winner": "a",
+    "explanation": "Кабан тяжелее пекари и сильнее клыками.",
+    "imageA": "wild-boar.webp",
+    "imageB": "collared-peccary.webp"
+  },
+  {
+    "id": 84,
+    "nameA": "Гуанако",
+    "nameB": "Двугорбый верблюд",
+    "winner": "b",
+    "explanation": "Верблюд больше и выносливее гуанако.",
+    "imageA": "guanaco.webp",
+    "imageB": "bactrian-camel.webp"
+  },
+  {
+    "id": 85,
+    "nameA": "Одногорбый верблюд",
+    "nameB": "Викунья",
+    "winner": "a",
+    "explanation": "Одногорбый верблюд намного крупнее изящной викуньи.",
+    "imageA": "dromedary.webp",
+    "imageB": "vicuna.webp"
+  },
+  {
+    "id": 86,
+    "nameA": "Дикдик Кирка",
+    "nameB": "Индийский носорог",
+    "winner": "b",
+    "explanation": "Индийский носорог огромен, дикдик — крошечная антилопа.",
+    "imageA": "kirk-s-dik-dik.webp",
+    "imageB": "indian-rhinoceros.webp"
+  },
+  {
+    "id": 87,
+    "nameA": "Синий кит",
+    "nameB": "Афалина",
+    "winner": "a",
+    "explanation": "Синий кит — самое большое животное на Земле, афалина рядом совсем небольшая.",
+    "imageA": "blue-whale.webp",
+    "imageB": "common-bottlenose-dolphin.webp"
+  },
+  {
+    "id": 88,
+    "nameA": "Горбатый кит",
+    "nameB": "Морская свинья",
+    "winner": "a",
+    "explanation": "Горбатый кит во много раз тяжелее морской свиньи.",
+    "imageA": "humpback-whale.webp",
+    "imageB": "harbour-porpoise.webp"
+  },
+  {
+    "id": 89,
+    "nameA": "Косатка",
+    "nameB": "Кашалот",
+    "winner": "b",
+    "explanation": "Кашалот намного больше и тяжелее косатки.",
+    "imageA": "orca.webp",
+    "imageB": "sperm-whale.webp"
+  },
+  {
+    "id": 90,
+    "nameA": "Гренландский кит",
+    "nameB": "Белуха",
+    "winner": "a",
+    "explanation": "Гренландский кит огромный, белуха рядом с ним небольшая.",
+    "imageA": "bowhead-whale.webp",
+    "imageB": "beluga-whale.webp"
+  },
+  {
+    "id": 91,
+    "nameA": "Кольчатая нерпа",
+    "nameB": "Нарвал",
+    "winner": "b",
+    "explanation": "Нарвал крупнее нерпы, а длинный бивень делает его ещё внушительнее.",
+    "imageA": "ringed-seal.webp",
+    "imageB": "narwhal.webp"
+  },
+  {
+    "id": 92,
+    "nameA": "Морж",
+    "nameB": "Гренландский тюлень",
+    "winner": "a",
+    "explanation": "Морж тяжелее тюленя и вооружён длинными клыками.",
+    "imageA": "walrus.webp",
+    "imageB": "harp-seal.webp"
+  },
+  {
+    "id": 93,
+    "nameA": "Южный морской слон",
+    "nameB": "Калифорнийский морской лев",
+    "winner": "a",
+    "explanation": "Морской слон — огромный тюлень, морской лев гораздо легче.",
+    "imageA": "southern-elephant-seal.webp",
+    "imageB": "california-sea-lion.webp"
+  },
+  {
+    "id": 94,
+    "nameA": "Северный морской котик",
+    "nameB": "Сивуч",
+    "winner": "b",
+    "explanation": "Сивуч крупнее и сильнее морского котика.",
+    "imageA": "northern-fur-seal.webp",
+    "imageB": "steller-sea-lion.webp"
+  },
+  {
+    "id": 95,
+    "nameA": "Морской леопард",
+    "nameB": "Тюлень-крабоед",
+    "winner": "a",
+    "explanation": "Морской леопард — хищник и охотится даже на других тюленей.",
+    "imageA": "leopard-seal.webp",
+    "imageB": "crabeater-seal.webp"
+  },
+  {
+    "id": 96,
+    "nameA": "Дельфин-белобочка",
+    "nameB": "Серый кит",
+    "winner": "b",
+    "explanation": "Серый кит громадный, белобочка — небольшой быстрый дельфин.",
+    "imageA": "short-beaked-common-dolphin.webp",
+    "imageB": "gray-whale.webp"
+  },
+  {
+    "id": 97,
+    "nameA": "Западная горилла",
+    "nameB": "Мандрил",
+    "winner": "a",
+    "explanation": "Горилла намного сильнее мандрила, хотя у того яркое лицо.",
+    "imageA": "western-gorilla.webp",
+    "imageB": "mandrill.webp"
+  },
+  {
+    "id": 98,
+    "nameA": "Калимантанский орангутан",
+    "nameB": "Белорукий гиббон",
+    "winner": "a",
+    "explanation": "Орангутан тяжёлый и очень сильный руками, гиббон легче.",
+    "imageA": "bornean-orangutan.webp",
+    "imageB": "lar-gibbon.webp"
+  },
+  {
+    "id": 99,
+    "nameA": "Мартышка диана",
+    "nameB": "Шимпанзе",
+    "winner": "b",
+    "explanation": "Шимпанзе крепче и сильнее мартышки дианы.",
+    "imageA": "diana-monkey.webp",
+    "imageB": "common-chimpanzee.webp"
+  },
+  {
+    "id": 100,
+    "nameA": "Бонобо",
+    "nameB": "Кошачий лемур",
+    "winner": "a",
+    "explanation": "Бонобо крупнее и сильнее кошачьего лемура.",
+    "imageA": "bonobo.webp",
+    "imageB": "ring-tailed-lemur.webp"
+  },
+  {
+    "id": 101,
+    "nameA": "Верветка",
+    "nameB": "Гамадрил",
+    "winner": "b",
+    "explanation": "Гамадрил массивнее верветки и клыки у него больше.",
+    "imageA": "vervet-monkey.webp",
+    "imageB": "hamadryas-baboon.webp"
+  },
+  {
+    "id": 102,
+    "nameA": "Японский макак",
+    "nameB": "Императорский тамарин",
+    "winner": "a",
+    "explanation": "Макак заметно крупнее крошечного тамарина.",
+    "imageA": "japanese-macaque.webp",
+    "imageB": "emperor-tamarin.webp"
+  },
+  {
+    "id": 103,
+    "nameA": "Носач",
+    "nameB": "Карликовая игрунка",
+    "winner": "a",
+    "explanation": "Носач гораздо больше: игрунка — одна из самых маленьких обезьян.",
+    "imageA": "proboscis-monkey.webp",
+    "imageB": "pygmy-marmoset.webp"
+  },
+  {
+    "id": 104,
+    "nameA": "Ринопитек Рокселланы",
+    "nameB": "Гелада",
+    "winner": "b",
+    "explanation": "Гелада тяжелее и сильнее ринопитека.",
+    "imageA": "golden-snub-nosed-monkey.webp",
+    "imageB": "gelada.webp"
+  },
+  {
+    "id": 105,
+    "nameA": "Индри",
+    "nameB": "Мышиный лемур",
+    "winner": "a",
+    "explanation": "Индри — крупный лемур, мышиный лемур помещается на ладони.",
+    "imageA": "indri.webp",
+    "imageB": "gray-mouse-lemur.webp"
+  },
+  {
+    "id": 106,
+    "nameA": "Филиппинский долгопят",
+    "nameB": "Сиаманг",
+    "winner": "b",
+    "explanation": "Сиаманг большой и сильный, долгопят — крошечный прыгун.",
+    "imageA": "philippine-tarsier.webp",
+    "imageB": "siamang.webp"
+  },
+  {
+    "id": 107,
+    "nameA": "Канадский бобр",
+    "nameB": "Домовая мышь",
+    "winner": "a",
+    "explanation": "Бобр во много раз крупнее мыши и грызёт даже деревья.",
+    "imageA": "north-american-beaver.webp",
+    "imageB": "house-mouse.webp"
+  },
+  {
+    "id": 108,
+    "nameA": "Хохлатый дикобраз",
+    "nameB": "Морская свинка",
+    "winner": "a",
+    "explanation": "Дикобраз крупнее и защищён длинными иглами, свинка беззащитнее.",
+    "imageA": "crested-porcupine.webp",
+    "imageB": "guinea-pig.webp"
+  },
+  {
+    "id": 109,
+    "nameA": "Рыжая полёвка",
+    "nameB": "Заяц-русак",
+    "winner": "b",
+    "explanation": "Русак больше и быстрее маленькой полёвки.",
+    "imageA": "bank-vole.webp",
+    "imageB": "european-hare.webp"
+  },
+  {
+    "id": 110,
+    "nameA": "Альпака",
+    "nameB": "Шиншилла",
+    "winner": "a",
+    "explanation": "Альпака намного крупнее пушистой шиншиллы.",
+    "imageA": "alpaca.webp",
+    "imageB": "long-tailed-chinchilla.webp"
+  },
+  {
+    "id": 111,
+    "nameA": "Квокка",
+    "nameB": "Рыжий кенгуру",
+    "winner": "b",
+    "explanation": "Рыжий кенгуру высокий и сильный, квокка размером с кошку.",
+    "imageA": "quokka.webp",
+    "imageB": "red-kangaroo.webp"
+  },
+  {
+    "id": 112,
+    "nameA": "Коала",
+    "nameB": "Сахарный летающий поссум",
+    "winner": "a",
+    "explanation": "Коала тяжелее и крепче крошечного сахарного поссума.",
+    "imageA": "koala.webp",
+    "imageB": "sugar-glider.webp"
+  },
+  {
+    "id": 113,
+    "nameA": "Короткошёрстный вомбат",
+    "nameB": "Северный бурый бандикут",
+    "winner": "a",
+    "explanation": "Вомбат плотный и сильный, бандикут гораздо легче.",
+    "imageA": "common-wombat.webp",
+    "imageB": "northern-brown-bandicoot.webp"
+  },
+  {
+    "id": 114,
+    "nameA": "Жирнохвостая сумчатая мышь",
+    "nameB": "Утконос",
+    "winner": "b",
+    "explanation": "Утконос крупнее, а на задних лапах у самца ядовитые шпоры.",
+    "imageA": "fat-tailed-dunnart.webp",
+    "imageB": "platypus.webp"
+  },
+  {
+    "id": 115,
+    "nameA": "Нильский крокодил",
+    "nameB": "Плащеносная ящерица",
+    "winner": "a",
+    "explanation": "Нильский крокодил огромный и очень сильный, плащеносная ящерица только пугает воротником.",
+    "imageA": "nile-crocodile.webp",
+    "imageB": "frilled-lizard.webp"
+  },
+  {
+    "id": 116,
+    "nameA": "Геккон токи",
+    "nameB": "Гребнистый крокодил",
+    "winner": "b",
+    "explanation": "Гребнистый крокодил — крупнейшая рептилия, геккон маленький.",
+    "imageA": "tokay-gecko.webp",
+    "imageB": "saltwater-crocodile.webp"
+  },
+  {
+    "id": 117,
+    "nameA": "Миссисипский аллигатор",
+    "nameB": "Зелёная игуана",
+    "winner": "a",
+    "explanation": "Аллигатор намного массивнее игуаны и сильнее челюстями.",
+    "imageA": "american-alligator.webp",
+    "imageB": "green-iguana.webp"
+  },
+  {
+    "id": 118,
+    "nameA": "Гавиал",
+    "nameB": "Обыкновенный хамелеон",
+    "winner": "a",
+    "explanation": "Гавиал — большой крокодил с длинной пастью, хамелеон маленький.",
+    "imageA": "gharial.webp",
+    "imageB": "common-chameleon.webp"
+  },
+  {
+    "id": 119,
+    "nameA": "Обыкновенный уж",
+    "nameB": "Сетчатый питон",
+    "winner": "b",
+    "explanation": "Сетчатый питон — одна из самых длинных змей, уж ему не соперник.",
+    "imageA": "grass-snake.webp",
+    "imageB": "reticulated-python.webp"
+  },
+  {
+    "id": 120,
+    "nameA": "Зелёная анаконда",
+    "nameB": "Маисовый полоз",
+    "winner": "a",
+    "explanation": "Анаконда очень толстая и сильная, маисовый полоз тонкий и безобидный.",
+    "imageA": "green-anaconda.webp",
+    "imageB": "corn-snake.webp"
+  },
+  {
+    "id": 121,
+    "nameA": "Медянка",
+    "nameB": "Королевская кобра",
+    "winner": "b",
+    "explanation": "Королевская кобра длиннее и ядовитее медянки.",
+    "imageA": "smooth-snake.webp",
+    "imageB": "king-cobra.webp"
+  },
+  {
+    "id": 122,
+    "nameA": "Гюрза",
+    "nameB": "Слепозмейка",
+    "winner": "a",
+    "explanation": "Гюрза ядовитая и крупная, слепозмейка тонкая и почти безвредная.",
+    "imageA": "macrovipera-lebetinus.webp",
+    "imageB": "indotyphlops-braminus.webp"
+  },
+  {
+    "id": 123,
+    "nameA": "Комодский варан",
+    "nameB": "Йеменский хамелеон",
+    "winner": "a",
+    "explanation": "Комодский варан — самая большая ящерица, хамелеон ему не ровня.",
+    "imageA": "komodo-dragon.webp",
+    "imageB": "veiled-chameleon.webp"
+  },
+  {
+    "id": 124,
+    "nameA": "Красноухая черепаха",
+    "nameB": "Галапагосская черепаха",
+    "winner": "b",
+    "explanation": "Галапагосская черепаха огромная, красноухая помещается в таз.",
+    "imageA": "pond-slider.webp",
+    "imageB": "galapagos-tortoise.webp"
+  },
+  {
+    "id": 125,
+    "nameA": "Кожистая черепаха",
+    "nameB": "Болотная черепаха",
+    "winner": "a",
+    "explanation": "Кожистая черепаха — гигант моря, болотная черепаха маленькая.",
+    "imageA": "leatherback-sea-turtle.webp",
+    "imageB": "european-pond-turtle.webp"
+  },
+  {
+    "id": 126,
+    "nameA": "Синеязыкий сцинк",
+    "nameB": "Нильский варан",
+    "winner": "b",
+    "explanation": "Нильский варан длиннее и быстрее, сцинк короткий и медлительный.",
+    "imageA": "blue-tongued-skink.webp",
+    "imageB": "nile-monitor.webp"
+  },
+  {
+    "id": 127,
+    "nameA": "Морская игуана",
+    "nameB": "Каролинский анолис",
+    "winner": "a",
+    "explanation": "Морская игуана крупнее и крепче крошечного анолиса.",
+    "imageA": "marine-iguana.webp",
+    "imageB": "carolina-anole.webp"
+  },
+  {
+    "id": 128,
+    "nameA": "Тигровый питон",
+    "nameB": "Подвязочная змея",
+    "winner": "a",
+    "explanation": "Тигровый питон толстый и сильный, подвязочная змея тонкая.",
+    "imageA": "burmese-python.webp",
+    "imageB": "common-garter-snake.webp"
+  },
+  {
+    "id": 129,
+    "nameA": "Техасский гремучник",
+    "nameB": "Калифорнийская королевская змея",
+    "winner": "b",
+    "explanation": "Королевская змея сильнее в этой паре: она охотится на гремучников и почти не боится их яда.",
+    "imageA": "western-diamondback-rattlesnake.webp",
+    "imageB": "california-kingsnake.webp"
+  },
+  {
+    "id": 130,
+    "nameA": "Ядозуб",
+    "nameB": "Жемчужная ящерица",
+    "winner": "a",
+    "explanation": "Ядозуб ядовитый и крепкий, жемчужная ящерица яда не имеет.",
+    "imageA": "gila-monster.webp",
+    "imageB": "ocellated-lizard.webp"
+  },
+  {
+    "id": 131,
+    "nameA": "Обыкновенный тритон",
+    "nameB": "Китайская исполинская саламандра",
+    "winner": "b",
+    "explanation": "Исполинская саламандра длиной с ребёнка, тритон помещается на ладони.",
+    "imageA": "smooth-newt.webp",
+    "imageB": "chinese-giant-salamander.webp"
+  },
+  {
+    "id": 132,
+    "nameA": "Лягушка-бык",
+    "nameB": "Обыкновенная квакша",
+    "winner": "a",
+    "explanation": "Лягушка-бык гораздо крупнее и рот у неё шире, чем у квакши.",
+    "imageA": "american-bullfrog.webp",
+    "imageB": "european-tree-frog.webp"
+  },
+  {
+    "id": 133,
+    "nameA": "Жаба-ага",
+    "nameB": "Краснобрюхая жерлянка",
+    "winner": "a",
+    "explanation": "Жаба-ага большая и ядовитая, жерлянка маленькая.",
+    "imageA": "cane-toad.webp",
+    "imageB": "european-fire-bellied-toad.webp"
+  },
+  {
+    "id": 134,
+    "nameA": "Обыкновенная жаба",
+    "nameB": "Лягушка-голиаф",
+    "winner": "b",
+    "explanation": "Лягушка-голиаф — самая большая лягушка, обычная жаба ей не ровня.",
+    "imageA": "common-toad.webp",
+    "imageB": "goliath-frog.webp"
+  },
+  {
+    "id": 135,
+    "nameA": "Японская исполинская саламандра",
+    "nameB": "Протей",
+    "winner": "a",
+    "explanation": "Японская саламандра намного крупнее и толще протея.",
+    "imageA": "japanese-giant-salamander.webp",
+    "imageB": "olm.webp"
+  },
+  {
+    "id": 136,
+    "nameA": "Нитеносный тритон",
+    "nameB": "Аксолотль",
+    "winner": "b",
+    "explanation": "Аксолотль крупнее и шире нитеносного тритона.",
+    "imageA": "palmate-newt.webp",
+    "imageB": "axolotl.webp"
+  },
+  {
+    "id": 137,
+    "nameA": "Рогатая лягушка",
+    "nameB": "Стеклянная лягушка",
+    "winner": "a",
+    "explanation": "Рогатая лягушка толстая и кусается, стеклянная лягушка крошечная.",
+    "imageA": "argentine-horned-frog.webp",
+    "imageB": "fleischmann-s-glass-frog.webp"
+  },
+  {
+    "id": 138,
+    "nameA": "Огненная саламандра",
+    "nameB": "Альпийский тритон",
+    "winner": "a",
+    "explanation": "Огненная саламандра крупнее, а её кожа ядовитее, чем у тритона.",
+    "imageA": "fire-salamander.webp",
+    "imageB": "alpine-newt.webp"
+  },
+  {
+    "id": 139,
+    "nameA": "Скумбрия",
+    "nameB": "Белая акула",
+    "winner": "b",
+    "explanation": "Белая акула — огромный хищник, скумбрия для неё добыча.",
+    "imageA": "atlantic-mackerel.webp",
+    "imageB": "great-white-shark.webp"
+  },
+  {
+    "id": 140,
+    "nameA": "Китовая акула",
+    "nameB": "Европейский анчоус",
+    "winner": "a",
+    "explanation": "Китовая акула самая большая рыба, анчоус крошечный.",
+    "imageA": "whale-shark.webp",
+    "imageB": "european-anchovy.webp"
+  },
+  {
+    "id": 141,
+    "nameA": "Рыба-клоун",
+    "nameB": "Тигровая акула",
+    "winner": "b",
+    "explanation": "Тигровая акула во много раз крупнее рыбы-клоуна.",
+    "imageA": "ocellaris-clownfish.webp",
+    "imageB": "tiger-shark.webp"
+  },
+  {
+    "id": 142,
+    "nameA": "Акула-молот",
+    "nameB": "Ставрида",
+    "winner": "a",
+    "explanation": "Акула-молот — крупный охотник, ставрида гораздо меньше.",
+    "imageA": "great-hammerhead.webp",
+    "imageB": "atlantic-horse-mackerel.webp"
+  },
+  {
+    "id": 143,
+    "nameA": "Рыба-меч",
+    "nameB": "Европейская сардина",
+    "winner": "a",
+    "explanation": "Рыба-меч большая и быстрая, сардина маленькая.",
+    "imageA": "swordfish.webp",
+    "imageB": "european-pilchard.webp"
+  },
+  {
+    "id": 144,
+    "nameA": "Атлантическая сельдь",
+    "nameB": "Голубой марлин",
+    "winner": "b",
+    "explanation": "Марлин огромный и сильный, сельдь — небольшая стайная рыба.",
+    "imageA": "atlantic-herring.webp",
+    "imageB": "blue-marlin.webp"
+  },
+  {
+    "id": 145,
+    "nameA": "Голубой тунец",
+    "nameB": "Европейский шпрот",
+    "winner": "a",
+    "explanation": "Голубой тунец тяжёлый и очень быстрый, шпрот крошечный.",
+    "imageA": "atlantic-bluefin-tuna.webp",
+    "imageB": "european-sprat.webp"
+  },
+  {
+    "id": 146,
+    "nameA": "Золотой карась",
+    "nameB": "Меконгский гигантский сом",
+    "winner": "b",
+    "explanation": "Меконгский сом — гигант, карась помещается на сковороду.",
+    "imageA": "crucian-carp.webp",
+    "imageB": "mekong-giant-catfish.webp"
+  },
+  {
+    "id": 147,
+    "nameA": "Арапаима",
+    "nameB": "Гуппи",
+    "winner": "a",
+    "explanation": "Арапаима одна из самых больших пресноводных рыб, гуппи крошечная.",
+    "imageA": "arapaima-gigas.webp",
+    "imageB": "guppy.webp"
+  },
+  {
+    "id": 148,
+    "nameA": "Гигантская мурена",
+    "nameB": "Бычок-кругляк",
+    "winner": "a",
+    "explanation": "Мурена длинная и сильная, бычок маленький.",
+    "imageA": "giant-moray.webp",
+    "imageB": "round-goby.webp"
+  },
+  {
+    "id": 149,
+    "nameA": "Плотва",
+    "nameB": "Электрический угорь",
+    "winner": "b",
+    "explanation": "Электрический угорь крупнее плотвы и бьёт током.",
+    "imageA": "common-roach.webp",
+    "imageB": "electric-eel.webp"
+  },
+  {
+    "id": 150,
+    "nameA": "Гигантская манта",
+    "nameB": "Морской конёк",
+    "winner": "a",
+    "explanation": "Манта огромная, морской конёк легко помещается в ладонь.",
+    "imageA": "giant-oceanic-manta-ray.webp",
+    "imageB": "long-snouted-seahorse.webp"
+  },
+  {
+    "id": 151,
+    "nameA": "Речная камбала",
+    "nameB": "Рыба-пила",
+    "winner": "b",
+    "explanation": "Рыба-пила крупнее камбалы и несёт длинный зубчатый рострум.",
+    "imageA": "european-flounder.webp",
+    "imageB": "smalltooth-sawfish.webp"
+  },
+  {
+    "id": 152,
+    "nameA": "Обыкновенная пиранья",
+    "nameB": "Неон",
+    "winner": "a",
+    "explanation": "Пиранья крупнее неона и кусает гораздо сильнее.",
+    "imageA": "red-bellied-piranha.webp",
+    "imageB": "neon-tetra.webp"
+  },
+  {
+    "id": 153,
+    "nameA": "Нильский окунь",
+    "nameB": "Данио-рерио",
+    "winner": "a",
+    "explanation": "Нильский окунь — большая хищная рыба, данио крошечный.",
+    "imageA": "nile-perch.webp",
+    "imageB": "zebrafish.webp"
+  },
+  {
+    "id": 154,
+    "nameA": "Ушастая аурелия",
+    "nameB": "Рыба-луна",
+    "winner": "b",
+    "explanation": "Рыба-луна огромная и тяжёлая, медуза-аурелия мягкая и небольшая.",
+    "imageA": "aurelia-aurita.webp",
+    "imageB": "ocean-sunfish.webp"
+  },
+  {
+    "id": 155,
+    "nameA": "Белуга",
+    "nameB": "Уклейка",
+    "winner": "a",
+    "explanation": "Белуга — огромный осётр, уклейка — маленькая рыбёшка.",
+    "imageA": "beluga-sturgeon.webp",
+    "imageB": "common-bleak.webp"
+  },
+  {
+    "id": 156,
+    "nameA": "Пескарь",
+    "nameB": "Атлантический палтус",
+    "winner": "b",
+    "explanation": "Палтус очень большой, пескарь маленький.",
+    "imageA": "common-gudgeon.webp",
+    "imageB": "atlantic-halibut.webp"
+  },
+  {
+    "id": 157,
+    "nameA": "Зубатка",
+    "nameB": "Корюшка",
+    "winner": "a",
+    "explanation": "У зубатки крепкие зубы и тело намного толще, чем у корюшки.",
+    "imageA": "atlantic-wolffish.webp",
+    "imageB": "european-smelt.webp"
+  },
+  {
+    "id": 158,
+    "nameA": "Латимерия",
+    "nameB": "Красная неоновая тетра",
+    "winner": "a",
+    "explanation": "Латимерия — большая древняя рыба, красная тетра крошечная.",
+    "imageA": "west-indian-ocean-coelacanth.webp",
+    "imageB": "cardinal-tetra.webp"
+  },
+  {
+    "id": 159,
+    "nameA": "Семиточечная божья коровка",
+    "nameB": "Жук-геркулес",
+    "winner": "b",
+    "explanation": "Жук-геркулес один из самых крупных жуков, божья коровка маленькая.",
+    "imageA": "coccinella-septempunctata.webp",
+    "imageB": "hercules-beetle.webp"
+  },
+  {
+    "id": 160,
+    "nameA": "Жук-олень",
+    "nameB": "Обыкновенный светляк",
+    "winner": "a",
+    "explanation": "Жук-олень крупнее, а «рога» самца сильнее челюстей светляка.",
+    "imageA": "lucanus-cervus.webp",
+    "imageB": "lampyris-noctiluca.webp"
+  },
+  {
+    "id": 161,
+    "nameA": "Золотистая бронзовка",
+    "nameB": "Жук-носорог",
+    "winner": "b",
+    "explanation": "Жук-носорог массивнее бронзовки и носит крепкий рог.",
+    "imageA": "cetonia-aurata.webp",
+    "imageB": "oryctes-nasicornis.webp"
+  },
+  {
+    "id": 162,
+    "nameA": "Жук-голиаф",
+    "nameB": "Священный скарабей",
+    "winner": "a",
+    "explanation": "Жук-голиаф тяжелее скарабея и один из самых больших жуков.",
+    "imageA": "goliathus-goliatus.webp",
+    "imageB": "scarabaeus-sacer.webp"
+  },
+  {
+    "id": 163,
+    "nameA": "Обыкновенный богомол",
+    "nameB": "Комар-пискун",
+    "winner": "a",
+    "explanation": "Богомол охотится на насекомых, комар для него лёгкая добыча.",
+    "imageA": "mantis-religiosa.webp",
+    "imageB": "culex-pipiens.webp"
+  },
+  {
+    "id": 164,
+    "nameA": "Мошка",
+    "nameB": "Дозорщик-император",
+    "winner": "b",
+    "explanation": "Стрекоза-дозорщик крупная и быстрая, мошка крошечная.",
+    "imageA": "simulium.webp",
+    "imageB": "anax-imperator.webp"
+  },
+  {
+    "id": 165,
+    "nameA": "Обыкновенный шершень",
+    "nameB": "Комнатная муха",
+    "winner": "a",
+    "explanation": "Шершень больше мухи и защищается сильным жалом.",
+    "imageA": "vespa-crabro.webp",
+    "imageB": "housefly.webp"
+  },
+  {
+    "id": 166,
+    "nameA": "Гороховая тля",
+    "nameB": "Медоносная пчела",
+    "winner": "b",
+    "explanation": "Пчела крупнее тли и может ужалить.",
+    "imageA": "acyrthosiphon-pisum.webp",
+    "imageB": "western-honey-bee.webp"
+  },
+  {
+    "id": 167,
+    "nameA": "Земляной шмель",
+    "nameB": "Рыжий лесной муравей",
+    "winner": "a",
+    "explanation": "Шмель крупнее одного муравья и сильнее телом.",
+    "imageA": "bombus-terrestris.webp",
+    "imageB": "formica-rufa.webp"
+  },
+  {
+    "id": 168,
+    "nameA": "Императорский скорпион",
+    "nameB": "Собачий клещ",
+    "winner": "a",
+    "explanation": "Скорпион намного крупнее клеща и защищается клешнями и хвостом.",
+    "imageA": "emperor-scorpion.webp",
+    "imageB": "ixodes-ricinus.webp"
+  },
+  {
+    "id": 169,
+    "nameA": "Сенокосец",
+    "nameB": "Паук-голиаф",
+    "winner": "b",
+    "explanation": "Паук-голиаф огромный и сильный, сенокосец тонконогий и хрупкий.",
+    "imageA": "phalangium-opilio.webp",
+    "imageB": "goliath-birdeater.webp"
+  },
+  {
+    "id": 170,
+    "nameA": "Гигантская сколопендра",
+    "nameB": "Мокрица",
+    "winner": "a",
+    "explanation": "Сколопендра — крупный хищник, мокрица маленькая и мирная.",
+    "imageA": "scolopendra-gigantea.webp",
+    "imageB": "porcellio-scaber.webp"
+  },
+  {
+    "id": 171,
+    "nameA": "Тепличная белокрылка",
+    "nameB": "Индийский палочник",
+    "winner": "b",
+    "explanation": "Палочник длиннее и крепче крошечной белокрылки.",
+    "imageA": "trialeurodes-vaporariorum.webp",
+    "imageB": "carausius-morosus.webp"
+  },
+  {
+    "id": 172,
+    "nameA": "Обыкновенная цикада",
+    "nameB": "Дрозофила",
+    "winner": "a",
+    "explanation": "Цикада заметно крупнее плодовой мушки.",
+    "imageA": "cicada-orni.webp",
+    "imageB": "drosophila-melanogaster.webp"
+  },
+  {
+    "id": 173,
+    "nameA": "Перелётная саранча",
+    "nameB": "Домовый сверчок",
+    "winner": "a",
+    "explanation": "Саранча крупнее и мощнее домового сверчка.",
+    "imageA": "locusta-migratoria.webp",
+    "imageB": "acheta-domesticus.webp"
+  },
+  {
+    "id": 174,
+    "nameA": "Платяная моль",
+    "nameB": "Дневной павлиний глаз",
+    "winner": "b",
+    "explanation": "Павлиний глаз крупнее и крепче маленькой платяной моли.",
+    "imageA": "tineola-bisselliella.webp",
+    "imageB": "aglais-io.webp"
+  },
+  {
+    "id": 175,
+    "nameA": "Сиреневый бражник",
+    "nameB": "Яблонная плодожорка",
+    "winner": "a",
+    "explanation": "Бражник — крупная бабочка, плодожорка маленькая.",
+    "imageA": "sphinx-ligustri.webp",
+    "imageB": "cydia-pomonella.webp"
+  },
+  {
+    "id": 176,
+    "nameA": "Фараонов муравей",
+    "nameB": "Муравей-пуля",
+    "winner": "b",
+    "explanation": "Муравей-пуля крупнее, а укус у него намного больнее.",
+    "imageA": "monomorium-pharaonis.webp",
+    "imageB": "paraponera-clavata.webp"
+  },
+  {
+    "id": 177,
+    "nameA": "Оса-охотница",
+    "nameB": "Паук-скакун",
+    "winner": "a",
+    "explanation": "Эта крупная оса больше паука-скакуна и жалит очень сильно.",
+    "imageA": "tarantula-hawk.webp",
+    "imageB": "phidippus-audax.webp"
+  },
+  {
+    "id": 178,
+    "nameA": "Жук-бомбардир",
+    "nameB": "Короед-типограф",
+    "winner": "a",
+    "explanation": "Жук-бомбардир выстреливает горячей едкой струёй, короед так не умеет.",
+    "imageA": "brachinus-crepitans.webp",
+    "imageB": "ips-typographus.webp"
+  },
+  {
+    "id": 179,
+    "nameA": "Подёнка",
+    "nameB": "Ктырь",
+    "winner": "b",
+    "explanation": "Ктырь — муха-охотник с крепким хоботком, подёнка хрупкая.",
+    "imageA": "ephemera-danica.webp",
+    "imageB": "dasypogon-diadema.webp"
+  },
+  {
+    "id": 180,
+    "nameA": "Жук-плавунец",
+    "nameB": "Водомерка",
+    "winner": "a",
+    "explanation": "Плавунец крупный водный хищник, водомерка лёгкая и тонкая.",
+    "imageA": "dytiscus-marginalis.webp",
+    "imageB": "gerris-lacustris.webp"
+  },
+  {
+    "id": 181,
+    "nameA": "Обыкновенная каракатица",
+    "nameB": "Гигантский кальмар",
+    "winner": "b",
+    "explanation": "Гигантский кальмар во много раз длиннее каракатицы.",
+    "imageA": "common-cuttlefish.webp",
+    "imageB": "giant-squid.webp"
+  },
+  {
+    "id": 182,
+    "nameA": "Обыкновенный осьминог",
+    "nameB": "Виноградная улитка",
+    "winner": "a",
+    "explanation": "Осьминог сильный и ловкий, улитка медленная и прячется в раковину.",
+    "imageA": "common-octopus.webp",
+    "imageB": "helix-pomatia.webp"
+  },
+  {
+    "id": 183,
+    "nameA": "Пальмовый вор",
+    "nameB": "Рак-отшельник",
+    "winner": "a",
+    "explanation": "Пальмовый вор — самый сильный рак: клешни у него мощнее, чем у отшельника.",
+    "imageA": "coconut-crab.webp",
+    "imageB": "pagurus-bernhardus.webp"
+  },
+  {
+    "id": 184,
+    "nameA": "Северная креветка",
+    "nameB": "Американский омар",
+    "winner": "b",
+    "explanation": "Омар намного крупнее креветки и клешни у него сильнее.",
+    "imageA": "pandalus-borealis.webp",
+    "imageB": "american-lobster.webp"
+  },
+  {
+    "id": 185,
+    "nameA": "Японский краб-паук",
+    "nameB": "Краб-плавунец",
+    "winner": "a",
+    "explanation": "Японский краб-паук огромен, краб-плавунец помещается на ладонь.",
+    "imageA": "japanese-spider-crab.webp",
+    "imageB": "necora-puber.webp"
+  },
+  {
+    "id": 186,
+    "nameA": "Морское блюдечко",
+    "nameB": "Мечехвост",
+    "winner": "b",
+    "explanation": "Мечехвост крупнее и закрыт жёстким панцирем, блюдечко маленькое.",
+    "imageA": "common-limpet.webp",
+    "imageB": "atlantic-horseshoe-crab.webp"
+  },
+  {
+    "id": 187,
+    "nameA": "Цианея",
+    "nameB": "Морской крыжовник",
+    "winner": "a",
+    "explanation": "Цианея огромная, а морской крыжовник размером с виноградину.",
+    "imageA": "lion-s-mane-jellyfish.webp",
+    "imageB": "pleurobrachia-pileus.webp"
+  },
+  {
+    "id": 188,
+    "nameA": "Гигантская тридакна",
+    "nameB": "Мидия",
+    "winner": "a",
+    "explanation": "Тридакна — огромный моллюск в толстой раковине, мидия гораздо меньше.",
+    "imageA": "giant-clam.webp",
+    "imageB": "blue-mussel.webp"
+  },
+  {
+    "id": 189,
+    "nameA": "Инфузория-туфелька",
+    "nameB": "Стентор",
+    "winner": "b",
+    "explanation": "Стентор крупнее туфельки: это одна из самых больших инфузорий.",
+    "imageA": "paramecium-caudatum.webp",
+    "imageB": "stentor-coeruleus.webp"
+  },
+  {
+    "id": 190,
+    "nameA": "Амёба-протей",
+    "nameB": "Эвглена",
+    "winner": "a",
+    "explanation": "Амёба-протей гораздо крупнее эвглены и обволакивает добычу.",
+    "imageA": "amoeba-proteus.webp",
+    "imageB": "euglena-gracilis.webp"
+  },
+  {
+    "id": 191,
+    "nameA": "Кишечная палочка",
+    "nameB": "Тиомаргарита",
+    "winner": "b",
+    "explanation": "Тиомаргарита — гигант среди бактерий, кишечная палочка крошечная.",
+    "imageA": "escherichia-coli.webp",
+    "imageB": "thiomargarita-namibiensis.webp"
+  },
+  {
+    "id": 192,
+    "nameA": "Тихоходка",
+    "nameB": "Коловратка",
+    "winner": "a",
+    "explanation": "Тихоходка крепче: она высыхает и потом оживает даже после сильного холода.",
+    "imageA": "tardigrade.webp",
+    "imageB": "rotifer.webp"
+  },
+  {
+    "id": 193,
+    "nameA": "Гидра",
+    "nameB": "Вольвокс",
+    "winner": "a",
+    "explanation": "Гидра крупнее колонии вольвокса и ловит добычу щупальцами.",
+    "imageA": "hydra-genus.webp",
+    "imageB": "volvox.webp"
+  },
+  {
+    "id": 194,
+    "nameA": "Диатомея",
+    "nameB": "Фораминифера",
+    "winner": "b",
+    "explanation": "Многие фораминиферы крупнее диатомей и живут в прочной раковинке.",
+    "imageA": "diatom.webp",
+    "imageB": "foraminifera.webp"
+  },
+  {
+    "id": 195,
+    "nameA": "Слизевик",
+    "nameB": "Пекарские дрожжи",
+    "winner": "a",
+    "explanation": "Слизевик расползается заметной сетью, а дрожжи — крошечные клетки.",
+    "imageA": "physarum-polycephalum.webp",
+    "imageB": "saccharomyces-cerevisiae.webp"
+  },
+  {
+    "id": 196,
+    "nameA": "Микоплазма",
+    "nameB": "Сенная палочка",
+    "winner": "b",
+    "explanation": "Сенная палочка умеет пережидать беду в споре, микоплазма крошечная и без прочной стенки.",
+    "imageA": "mycoplasma-pneumoniae.webp",
+    "imageB": "bacillus-subtilis.webp"
+  },
+  {
+    "id": 197,
+    "nameA": "Дидиний",
+    "nameB": "Сувойка",
+    "winner": "a",
+    "explanation": "Дидиний — хищная инфузория, а сувойка сидит на стебельке и только фильтрует воду.",
+    "imageA": "didinium.webp",
+    "imageB": "vorticella.webp"
+  },
+  {
+    "id": 198,
+    "nameA": "Радиолярия",
+    "nameB": "Хламидомонада",
+    "winner": "a",
+    "explanation": "У радиолярии ажурный минеральный скелет, хламидомонада — крошечная голая клетка.",
+    "imageA": "radiolaria.webp",
+    "imageB": "chlamydomonas-reinhardtii.webp"
+  },
+  {
+    "id": 199,
+    "nameA": "Хлорелла",
+    "nameB": "Дафния",
+    "winner": "b",
+    "explanation": "Дафния крупнее и ест хлореллу.",
+    "imageA": "chlorella.webp",
+    "imageB": "daphnia-magna.webp"
+  },
+  {
+    "id": 200,
+    "nameA": "Китоглав",
+    "nameB": "Африканская якана",
+    "winner": "a",
+    "explanation": "Китоглав крупный и клюв у него огромный, якана лёгкая болотная птица.",
+    "imageA": "shoebill.webp",
+    "imageB": "african-jacana.webp"
+  }
+]
