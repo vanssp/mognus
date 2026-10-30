@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">могну</string>
+    <string name="subtitle">кто кого могнет</string>
+    <string name="start">Старт</string>
+    <string name="next">Дальше</string>
+    <string name="progress">%1$d / %2$d</string>
+    <string name="progress_done">Пройдено %1$d из %2$d</string>
+    <string name="end_title">Все пары пройдены</string>
+    <string name="end_body">Теперь ты знаешь, кто кого могнет.</string>
+    <string name="logo_description">Логотип могну</string>
+    <string name="creature_description">%1$s</string>
+</resources>

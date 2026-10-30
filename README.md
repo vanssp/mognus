@@ -2,6 +2,8 @@
 
 Story / nutrition API (FastAPI + Ollama + frontend) и линия AI-автоматизации на n8n.
 
+Android-игра «могну» («кто кого могнет») лежит в каталоге [`android/`](android/README.md).
+
 ## Стек приложения
 
 - `backend/` — FastAPI (`/generate`)
